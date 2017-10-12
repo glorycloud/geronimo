@@ -1,0 +1,6 @@
+将工程导出成jar包，导出的时候要把META-INF目录包含在内
+在要使用的工程上添加build path，加入这个jar包，然后再加入sun javamail的jar包。添加的顺序不能错，以保证geronimo mail出现在classpath的前面
+
+另外还要把geronimo-javamail_1.4_spec.jar添加到classpath
+
+然后其他tomcat，就可以是用geronimo的javamail provider了
